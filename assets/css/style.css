@@ -1,0 +1,291 @@
+
+:root {
+  --gray: rgba(255, 235, 205, 0.548);
+  --brown: rgb(160, 117, 62);
+
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--gray);
+    color: var(--brown);
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    position: relative;
+    left: -200px;
+}
+
+nav {
+  list-style-type: none;
+  text-align: right; 
+  padding: 0;
+  margin: 0;
+  position: relative;
+  right: -300px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: var(--brown);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+nav li a:hover {
+  background-color: #7a7676;
+}
+
+.active {
+  background-color: #7a7676;
+}
+
+main {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 96%;
+  margin: 2% auto;
+}
+
+
+
+.hero-image {
+  background: url(../photos/colt-photo-4.jpg) no-repeat center;
+  background-size: cover;
+  height: 700px;
+  width: 70%;
+  margin-left: 15%;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  justify-content: center;
+  top: 15%;
+  left: 50%;
+  height: 60px;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: rgb(2, 2, 2);
+  background-color: rgba(250, 235, 215, 0.534);
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 150%;
+}
+
+hr.solid {
+  border-top: 10px solid var(--gray);
+  border-bottom: 10px solid var(--gray);
+
+}
+
+.about-me {
+
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--gray);
+    color: var(--brown);
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+.about-me h1 {
+  display: inline-block;
+  font-size: 48px;
+  position: relative;
+  align-content: center;
+  padding: 20px;
+  text-align: right;
+
+}
+
+.about-me p {
+
+  display: inline-block;
+  font-size: 40px;
+  position: relative;
+  left: 50px;
+
+}
+
+.projects h1 {
+  display: inline-block;
+  font-size: 40px;
+  position: relative;
+  left: -15px;
+  align-content: center;
+  padding: 20px;
+}
+
+.projects {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--gray);
+    color: var(--brown);
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+.row {
+  display: flex;
+}
+
+.column-1 .column-2 {
+  flex: 50%;
+}
+
+
+
+.project-1 img, .project-3 img {
+
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border: 3px solid var(--gray);
+
+}
+
+.project-2 img, .project-4 img {
+
+  width: 400px;
+  height: 350px;
+  margin: 10px;
+  border: 3px solid var(--gray);
+
+}
+
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--gray);
+  color: var(--brown);
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.contact h1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 48px;
+  position: relative;
+  left: -210px;
+  width: 200px;
+  text-align: right;
+}
+
+
+.contact nav {
+  list-style-type: none;
+  text-align: right; 
+  padding: 0;
+  margin: 0;
+  position: relative;
+  right: 5px;
+}
+
+.contact nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact nav li {
+  display: inline-block;
+  font-size: 30px;
+  padding: 5px;
+
+}
+
+.contact li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: var(--gray);
+  color: var(--brown);
+}
+html {
+  background: url(../photos/mountains.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+  main,
+nav {
+  flex-direction: column;
+}
+}
+
+@media screen and (max-width: 992px) {
+    main,
+  nav {
+    flex-direction: column;
+  }
+  }
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    main,
+  nav {
+    flex-direction: column;
+  }
+  }
